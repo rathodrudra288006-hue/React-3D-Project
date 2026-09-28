@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vite/
+.parcel-cache/
+.env
+.env.local
