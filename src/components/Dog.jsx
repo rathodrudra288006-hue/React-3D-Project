@@ -13,12 +13,12 @@ const Dog = () => {
     gl.outputColorSpace = THREE.SRGBColorSpace;
   });
 
-  const textures = useTexture(
+ /* const textures = useTexture(
     {
       normalMap: "/dog_normals.jpg",
       sampleMatCap: "/matcap/mat-2.png",
     }
-  );
+  );*/
 
   textures.normalMap.flipY = false;
   textures.sampleMatCap.colorSpace = THREE.SRGBColorSpace;
