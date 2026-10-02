@@ -2,7 +2,7 @@ import React from "react";
 import * as THREE from "three";
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, useGLTF, useTexture } from "@react-three/drei";
-import { normalMap } from "three/tsl";
+import { normalMap, texture } from "three/tsl";
 
 const Dog = () => {
   const model = useGLTF("/models/dog.drc.glb");
@@ -13,23 +13,27 @@ const Dog = () => {
     gl.outputColorSpace = THREE.SRGBColorSpace;
   });
 
- /* const textures = useTexture(
+  /* const textures = useTexture(
     {
       normalMap: "/dog_normals.jpg",
       sampleMatCap: "/matcap/mat-2.png",
     }
   );*/
 
-  const [normalMap,sampleMatCap] = useTexture(["/dog_normals.jpg","/matcap/mat-2.png"])
-
-  textures.normalMap.flipY = false;
-  textures.sampleMatCap.colorSpace = THREE.SRGBColorSpace;
+  const [normalMap, sampleMatCap] = useTexture([
+    "/dog_normals.jpg",
+    "/matcap/mat-2.png",
+  ]).map((texture) => {
+    texture.flipY = false;
+    texture.colorSpace = THREE.SRGBColorSpace;
+    return texture;
+  });
 
   model.scene.traverse((child) => {
     if (child.name.includes("DOG")) {
       child.material = new THREE.MeshMatcapMaterial({
-        normalMap: textures.normalMap,
-        matcap: textures.sampleMatCap,
+        normalMap: normalMap,
+        matcap: sampleMatCap,
       });
     }
   });
