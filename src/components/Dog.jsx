@@ -17,11 +17,7 @@ const Dog = () => {
     {
       normalMap: "/dog_normals.jpg",
       sampleMatCap: "/matcap/mat-2.png",
-    },
-    (textures) => {
-      textures.flipY = false;
-      textures.colorSpace = THREE.SRGBColorSpace;
-    },
+    }
   );
 
   textures.normalMap.flipY = false;
