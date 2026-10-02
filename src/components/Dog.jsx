@@ -20,6 +20,8 @@ const Dog = () => {
     }
   );*/
 
+  const [normalMap,sampleMatCap] = useTexture(["/dog_normals.jpg","/matcap/mat-2.png"])
+
   textures.normalMap.flipY = false;
   textures.sampleMatCap.colorSpace = THREE.SRGBColorSpace;
 
