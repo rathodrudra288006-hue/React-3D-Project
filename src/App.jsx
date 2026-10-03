@@ -21,7 +21,12 @@ function App() {
         >
           <Dog />
         </Canvas>
-        <section id="section-1"></section>
+        <section id="section-1">
+          <nav>
+            <div class-name="">
+            </div>
+          </nav>
+        </section>
         <section id="section-2"></section>
         <section id="section-3"></section>
       </main>
