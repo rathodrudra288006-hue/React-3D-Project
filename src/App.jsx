@@ -24,6 +24,9 @@ function App() {
         <section id="section-1">
           <nav>
             <div class-name="nav-elem">
+              <svg width="6" height="11" class="__web-inspector-hide-shortcut__">
+    	        <use xlink:href="https://dogstudio.co/app/themes/portfolio-2018/static/assets/spritesheet.svg#caret-left"></use> 
+  	          </svg>
             </div>
           </nav>
         </section>
