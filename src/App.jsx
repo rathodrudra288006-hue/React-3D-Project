@@ -23,7 +23,7 @@ function App() {
         </Canvas>
         <section id="section-1">
           <nav>
-            <div class-name="">
+            <div class-name="nav-elem">
             </div>
           </nav>
         </section>
