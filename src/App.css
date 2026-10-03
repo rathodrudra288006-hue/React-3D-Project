@@ -7,8 +7,8 @@ html,
 body,
 #root {
   width: 100%;
-
   background-color: black;
+  color:whitesmoke;
 }
 main {
   position: relative;
