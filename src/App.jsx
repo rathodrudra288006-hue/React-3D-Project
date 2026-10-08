@@ -7,13 +7,13 @@ function App() {
     <>
       <main>
         <div className="images">
-          <img src="/tomorrowland.png" alt=""/>
-          <img src="/navy-pier.png" alt=""/>
-          <img src="/msi-chicago.png" alt=""/>
-          <img src="/phone.png" alt=""/>
-          <img src="/kikk.png" alt=""/>
-          <img src="/kennedy.png" alt=""/>
-          <img src="/opera.png" alt=""/>
+          <img id="tomorrowland" src="/tomorrowland.png" alt="" />
+          <img id="navy-pier" src="/navy-pier.png" alt="" />
+          <img id="msi-chicago" src="/msi-chicago.png" alt="" />
+          <img id="phone" src="/phone.png" alt="" />
+          <img id="kikk" src="/kikk.png" alt="" />
+          <img id="kennedy" src="/kennedy.png" alt="" />
+          <img id="opera" src="/opera.png" alt="" />
         </div>
         <Canvas
           id="canvas-elem"
@@ -82,37 +82,69 @@ function App() {
         </section>
         <section id="section-2">
           <div className="titles">
-            <div className="title">
+            <div img-title="tomorrowland" className="title">
               <small>2020-ONGOING</small>
               <h1>Tomorrowland</h1>
             </div>
-            <div className="title">
-              <small>2020-ONGOING</small>
+            <div img-title="navy-pier" className="title">
+              <small>2018-TODAY</small>
               <h1>Navy Pier</h1>
             </div>
-            <div className="title">
-              <small>2020-ONGOING</small>
+            <div img-title="msi-chicago" className="title">
+              <small>2015-TODAY</small>
               <h1>MSI Chicago</h1>
             </div>
-            <div className="title">
-              <small>2020-ONGOING</small>
+            <div img-title="phone" className="title">
+              <small>2016</small>
               <h1>This was Louise's Phone</h1>
             </div>
-            <div className="title">
-              <small>2020-ONGOING</small>
+            <div img-title="kikk" className="title">
+              <small>2012-TODAY</small>
               <h1>KIKK Festival 2018</h1>
             </div>
-            <div className="title">
-              <small>2020-ONGOING</small>
+            <div img-title="kennedy" className="title">
+              <small>2017</small>
               <h1>The Kennedy Center</h1>
             </div>
-            <div className="title">
-              <small>2020-ONGOING</small>
+            <div img-title="opera" className="title">
+              <small>2016-ONGOING</small>
               <h1>Royal Opera Of Wallonia</h1>
             </div>
           </div>
         </section>
-        <section id="section-3"></section>
+        <section id="section-3">
+          <div className="top">
+            <div className="left">
+              <h2>
+                We're crafting <br /> emotional <br /> experiences aimed <br />{" "}
+                at improving <br />
+                results
+              </h2>
+            </div>
+            <div className="right"></div>
+          </div>
+        </section>
+        <section id="section-4">
+          <div className="bottom">
+            <div className="left"></div>
+            <div className="right">
+              <p>
+                Dogstudio is a design &amp; <br /> technology firm working
+                globally <br /> from our offices based in <br /> Belgium and
+                Chicago.
+                <br /> Our strong focus on producing <br /> high quality &amp;
+                emotional <br /> brandings, digital products and <br />{" "}
+                experiences became a signature.
+              </p>
+              <p>
+                We’re passionate about moving <br /> people and solving problems
+                for <br /> the likes of Microsoft, The <br /> Museum of Science
+                And Industry <br /> Of Chicago, The Kennedy Center <br /> of
+                Washington, Dragone, Quanta <br /> Magazine, and many more.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
