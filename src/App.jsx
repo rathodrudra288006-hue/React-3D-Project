@@ -7,13 +7,13 @@ function App() {
     <>
       <main>
         <div className="images">
-          <img src="" alt=""/>
-          <img src="" alt=""/>
-          <img src="" alt=""/>
-          <img src="" alt=""/>
-          <img src="" alt=""/>
-          <img src="" alt=""/>
-          <img src="" alt=""/>
+          <img src="/tomorrowland.png" alt=""/>
+          <img src="/navy-pier.png" alt=""/>
+          <img src="/msi-chicago.png" alt=""/>
+          <img src="/phone.png" alt=""/>
+          <img src="/kikk.png" alt=""/>
+          <img src="/kennedy.png" alt=""/>
+          <img src="/opera.png" alt=""/>
         </div>
         <Canvas
           id="canvas-elem"
