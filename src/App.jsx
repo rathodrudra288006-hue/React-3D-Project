@@ -6,7 +6,15 @@ function App() {
   return (
     <>
       <main>
-        <div className="images"></div>
+        <div className="images">
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+        </div>
         <Canvas
           id="canvas-elem"
           style={{
